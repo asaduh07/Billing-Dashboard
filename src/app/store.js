@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import billingReducer from '../features/billing/billingSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    billing:billingReducer
   },
 });
