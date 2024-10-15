@@ -1,0 +1,29 @@
+.container {
+    padding: 20px;
+}
+
+.totalContainer {
+    background-color: #f0f8ff; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+}
+
+.totalText {
+    font-size: 1.2rem; 
+    font-weight: 500; 
+    color: #333; 
+}
+
+.totalText strong {
+    color: #007bff; 
+}
+.noData {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100%;           
+    font-size: 1.2rem;      
+    color: #888;            
+}

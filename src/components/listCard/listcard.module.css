@@ -1,11 +1,53 @@
-
-.container{
-    display: flex;
+.cardContainer {
     width: 98%;
-    background-color: aqua;
-    justify-content: space-evenly;
+    background-color: #f3f4f6;
+    margin: 1%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    margin: 1%;
-    border-radius: .5rem;
+    background-color: aqua;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+.container:hover {
+    background-color: #e0f7fa;
+}
+
+.companyName, .cost, .submission {
+    flex: 1;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.companyName {
+    background-color: rgb(122, 53, 188);
+    color: white;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.cost, .submission {
+    color: #333;
+    font-weight: bold;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+

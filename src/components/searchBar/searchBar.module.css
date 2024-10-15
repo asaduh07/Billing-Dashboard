@@ -1,23 +1,87 @@
-
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: lightgray;
+    background-color: #f8f9fa; /* Light background for a cleaner look */
     justify-content: center;
     align-items: center;
-    padding: 0.8rem;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 1200px; /* Restrict max-width for large screens */
+    margin: auto;
 }
-.bottom{
+
+h1 {
+    color: #333; /* Darker text for better contrast */
+    font-size: 1.8rem;
+    margin-bottom: 1rem; /* Space below the title */
+    text-align: center;
+}
+
+.bottom {
     display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
+    gap: 2rem; /* Add gap between flex items */
+    margin-top: 1rem;
 }
 
-.option{
+.option {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Align labels and inputs to the left */
+    width: 220px; /* Set fixed width for uniformity */
+}
+
+h2 {
+    font-size: 1rem;
+    color: #555; /* Lighter gray for labels */
+    margin-bottom: 0.5rem; /* Add spacing between label and input */
+}
+
+select, input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for input fields */
+    background-color: #fff; /* White background for contrast */
+    color: #333; /* Darker text color */
+    transition: border-color 0.2s ease;
+}
+
+select:focus, input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+}
+
+button {
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0px 3px 6px rgba(0, 123, 255, 0.2); 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+@media (max-width: 768px) {
+    .bottom {
+        flex-direction: column; 
+    }
+
+    .option {
+        width: 100%; 
+    }
 }
